@@ -10,176 +10,188 @@
 </head>
 
 <body>
-    <aside>
-        <img src="images/menu.png" width="30px" height="30px">
-        <img class="logo" src="images/logo.png" width="100px" height="60px">
-        <div class="menu-items">
-            <div>
-                <img src="images/home.png" width="22px" height="22px">
-                <a href='#'>Inicio</a>
-            </div>
-            <div>
-                <img src="images/rocket.png" width="22px" height="22px">
-                <a href='#'>Explorar</a>
-            </div>
-            <div>
-                <img src="images/users.png" width="22px" height="22px">
-                <a href='#'>Suscripciones</a>
-            </div>
-            <hr>
-            <div>
-                <img src="images/videos.png" width="22px" height="22px">
-                <a href='#'>Biblioteca</a>
-            </div>
-            <div>
-                <img src="images/history.png" width="22px" height="22px">
-                <a href='#'>Historial</a>
-            </div>
-            <div>
-                <img src="images/video-camera.png" width="22px" height="22px">
-                <a href='#'>Mis videos</a>
-            </div>
-            <div>
-                <img src="images/clock.png" width="22px" height="22px">
-                <a href='#'>Ver más tarde</a>
-            </div>
-            <div>
-                <img src="images/like.png" width="22px" height="22px">
-                <a href='#'>Videos que me gustan</a>
-            </div>
-            <div>
-                <img src="images/arrow.png" width="22px" height="22px">
-                <a href='#'>Mostrar más</a>
-            </div>
-            <hr>
+    <div class="grid">
+        <aside class="aside">
+            <img class="logo" src="images/logo.png">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+                <span></span>
+            </label>
 
-            <h5>SUSCRIPCIONES</h5>
+            <ul class="menu-items">
+                <li class="items">
+                    <img src="images/home.png">
+                    <a href="#">Inicio</a>
+                </li>
+                <li class="items">
+                    <img src="images/rocket.png">
+                    <a href="#">Explorar</a>
+                </li>
+                <li class="items">
+                    <img src="images/users.png">
+                    <a href="#">Suscripciones</a>
+                </li>
+                <li class="items">
+                    <img src="images/videos.png">
+                    <a href="#">Biblioteca</a>
+                </li>
+                <li class="items">
+                    <img src="images/history.png">
+                    <a href="#">Historial</a>
+                </li>
+                <li class="items">
+                    <img src="images/video-camera.png">
+                    <a href="#">Mis videos</a>
+                </li>
+                <li class="items">
+                    <img src="images/clock.png">
+                    <a href="#">Ver más tarde</a>
+                </li>
+                <li class="items">
+                    <img src="images/like.png">
+                    <a href="#">Videos que me gustan</a>
+                </li>
+                <li class="items">
+                    <img src="images/arrow.png">
+                    <a href="#">Mostrar más</a>
+                </li>
+
+                <!--<h5>SUSCRIPCIONES</h5>
             <div class="channels">
-                <img src="images/tzuzul-code.jpg" width="22px" height="22px">
+                <img src="images/tzuzul-code.jpg" >
                 Tzuzul Code
+            </div>-->
+            </ul>
+        </aside>
+
+        <main>
+            <div>
+                <nav class="nav">
+                    <div class="search">
+                        <input type="search" class="input-search" placeholder="Buscar">
+                        <img class="icon-lens" src="images/search.png">
+
+                        <div>
+                            <img class="voice" src="images/icon-microphone.png">
+                        </div>
+                    </div>
+
+
+                    <div class="nav-icons">
+                        <img class="icon" src="images/icon-video.png">
+                        <img class="icon" src="images/icon-grid.png">
+                        <img class="icon" src="images/icon-notification.png">
+                        <img class="icon" src="images/icon-user.png">
+                    </div>
+                </nav>
+
+                <div class="main-multimedia">
+
+                    <div class="category">
+                        <h2>Música</h2>
+                        <div>
+                            <a href="loader.html" class="btn">
+                                Ver más
+                                <img src="images/arrow-right.png">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid-multimedia">
+                        <div class="card">
+                            <iframe width="100%" height="130px" src="https://www.youtube.com/embed/CCHdMIEGaaM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-title">
+                                <span>Daft Punk</span><br>
+                                Daft Punk - Get Lucky (Official Audio) ft. Pha...<br>
+                                <span>23M views - 9 years ago</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <iframe width="100%" height="130px" src="https://www.youtube.com/embed/ewOPQZZn4SY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-title">
+                                <span>The Strokes</span><br>
+                                The Strokes - The Adults Are Talking (Of...<br>
+                                <span>17M views - 1 years ago</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <iframe width="100%" height="130px" src="https://www.youtube.com/embed/uSD4vsh1zDA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-title">
+                                <span>Black Eyed Peas</span><br>
+                                The Black Eyed Peas - I Gotta Feeling (Official...<br>
+                                <span>616M views - 12 years ago</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <iframe width="100%" height="130px" src="https://www.youtube.com/embed/Bimd2nZirT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-title">
+                                <span>The 1975</span><br>
+                                The 1975 - Somebody Else (Official Video)<br>
+                                <span>73M views - 5 years ago</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <iframe width="100%" height="130px" src="https://www.youtube.com/embed/bpOSxM0rNPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-title">
+                                <span>Arctic Monkeys</span><br>
+                                Arctic Monkeys - Do I Wanna Know? (Officia...<br>
+                                <span>1350M views - 9 years ago</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <iframe width="100%" height="130px" src="https://www.youtube.com/embed/RXpe-kbDJE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-title">
+                                <span>Tipling Rock</span><br>
+                                Tipling Rock - Staring [Visualizer]<br>
+                                <span>11M views - 5 years ago</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <iframe width="100%" height="130px" src="https://www.youtube.com/embed/6GCNUeTFSbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-title">
+                                <span>Michael Sembello</span><br>
+                                Michael Sembello - Maniac<br>
+                                <span>81M views - 9 years ago</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <iframe width="100%" height="130px" src="https://www.youtube.com/embed/04mfKJWDSzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-title">
+                                <span>Gorillaz</span><br>
+                                Gorillaz - On Melancholy Hill (Offici...<br>
+                                <span>203M views - 12 years ago</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <iframe width="100%" height="130px" src="https://www.youtube.com/embed/h0ffIJ7ZO4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-title">
+                                <span>Dire Straits</span><br>
+                                Dire Straits - Sultans Of Swing<br>
+                                <span>175M views - 12 years ago</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <iframe width="100%" height="130px" src="https://www.youtube.com/embed/Up4WjdabA2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card-title">
+                                <span>Electric Light Orchestra</span><br>
+                                Electric Light Orchestra - Last Train to London...<br>
+                                <span>100M views - 9 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </aside>
-
-    <main>
-        <div>
-            <nav>
-                <div class="search">
-                    <img src="images/search.png">
-                    <input placeholder="Buscar" type="search" class="input">
-                </div>
-                <img class="voice" src="images/icon-microphone.png">
-                <div class="nav-icons">
-                    <img src="images/icon-video.png">
-                    <img src="images/icon-grid.png">
-                    <img src="images/icon-notification.png">
-                    <img src="images/icon-user.png">
-                </div>
-                <hr>
-            </nav>
-
-            <div class="multimedia-musica">
-                <div class="musica">Música</div>
-                <div class="musica1">
-                    <iframe width="100%" height="130px" src="https://www.youtube.com/embed/CCHdMIEGaaM"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <span>Daft Punk</span><br>
-                        Daft Punk - Get Lucky (Official Audio) ft. Pha...<br>
-                        <span>23M views - 9 years ago</span>
-                    </div>
-                </div>
-                <div class="musica2">
-                    <iframe width="100%" height="130px" src="https://www.youtube.com/embed/ewOPQZZn4SY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <span>The Strokes</span><br>
-                        The Strokes - The Adults Are Talking (Of...<br>
-                        <span>17M views - 1 years ago</span>
-                    </div>
-                </div>
-                <div class="musica3">
-                    <iframe width="100%" height="130px" src="https://www.youtube.com/embed/uSD4vsh1zDA"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <span>Black Eyed Peas</span><br>
-                        The Black Eyed Peas - I Gotta Feeling (Official...<br>
-                        <span>616M views - 12 years ago</span>
-                    </div>
-                </div>
-                <div class="musica4">
-                    <iframe width="100%" height="130px" src="https://www.youtube.com/embed/Bimd2nZirT4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <span>The 1975</span><br>
-                        The 1975 - Somebody Else (Official Video)<br>
-                        <span>73M views - 5 years ago</span>
-                    </div>
-                </div>
-                <div class="musica5">
-                    <iframe width="100%" height="130px" src="https://www.youtube.com/embed/bpOSxM0rNPM"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div>
-                        <span>Arctic Monkeys</span><br>
-                        Arctic Monkeys - Do I Wanna Know? (Officia...<br>
-                        <span>1350M views - 9 years ago</span>
-                    </div>
-                </div>
-                <div class="musica6">
-                    <iframe width="100%" height="130px" src="https://www.youtube.com/embed/RXpe-kbDJE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
-                        <span>Tipling Rock</span><br>
-                        Tipling Rock - Staring [Visualizer]<br>
-                        <span>11M views - 5 years ago</span>
-                    </div>
-                </div>
-                <div class="musica7">
-                    <iframe width="100%" height="130px" src="https://www.youtube.com/embed/6GCNUeTFSbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
-                        <span>Michael Sembello</span><br>
-                        Michael Sembello - Maniac<br>
-                        <span>81M views - 9 years ago</span>
-                    </div>
-                </div>
-                <div class="musica8">
-                    <iframe width="100%" height="130px" src="https://www.youtube.com/embed/04mfKJWDSzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
-                        <span>Gorillaz</span><br>
-                        Gorillaz - On Melancholy Hill (Offici...<br>
-                        <span>203M views - 12 years ago</span>
-                    </div>
-                </div>
-                <div class="musica9">
-                    <iframe width="100%" height="130px" src="https://www.youtube.com/embed/h0ffIJ7ZO4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
-                        <span>Dire Straits</span><br>
-                        Dire Straits - Sultans Of Swing<br>
-                        <span>175M views - 12 years ago</span>
-                    </div>
-                </div>
-                <div class="musica10">
-                    <iframe width="100%" height="130px" src="https://www.youtube.com/embed/Up4WjdabA2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div>
-                        <span>Electric Light Orchestra</span><br>
-                        Electric Light Orchestra - Last Train to London...<br>
-                        <span>100M views - 9 years ago</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
+        </main>
+    </div>
 
 </body>
-
 </html>
