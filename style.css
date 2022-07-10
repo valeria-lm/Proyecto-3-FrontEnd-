@@ -1,15 +1,15 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* GLOBAL */
+/*--------------------GLOBAL--------------------*/
 img {
     max-width: 100%;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -19,14 +19,14 @@ body{
     color: white;
 }
 
-/*------------SIDEMENU------------*/
+/*--------------------SIDEMENU--------------------*/
 #menu-toggle {
-    opacity: 0;
-    }
+    display: none;
+}
 
 #menu-toggle:checked + .menu-btn > span {
-      transform: rotate(45deg);
-    }
+    transform: rotate(45deg);
+}
 
 #menu-toggle:checked + .menu-btn > span::before {
     top: 0;
@@ -44,8 +44,8 @@ body{
 
 .menu-btn {
     position: fixed;
-    top: 93px;
-    left: 20px;
+    top: 32px;
+    left: 26px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -59,8 +59,8 @@ body{
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #57CC99;
-    transition-duration: .25s;
+    background-color: #57cc99;
+    transition-duration: 0.25s;
 }
 
 .menu-btn > span::before {
@@ -82,8 +82,8 @@ body{
     padding: 120px 0;
     list-style: none;
     background-color: #161616;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    transition-duration: .25s;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
 }
 
 .menu-items-desktop {
@@ -93,8 +93,8 @@ body{
     padding: 120px 0;
     list-style: none;
     background-color: #161616;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    transition-duration: .25s;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
 }
 
 .items {
@@ -102,11 +102,11 @@ body{
     align-items: center;
     gap: 10px;
     padding: 12px 20px;
-    transition-duration: .25s;
+    transition-duration: 0.25s;
 }
 
 .items:hover {
-    background-color: #80ED9998;
+    background-color: #80ed9998;
 }
 
 .items img {
@@ -121,13 +121,10 @@ body{
 }
 
 .logo {
-    /* position: absolute; */
-    top: 16px;
-    width: 65px;
-    height: 50px;
+    display: none;
 }
 
-/*------SIDEMENU: channels------*/
+/*--------------------SIDEMENU: channels---------------------*/
 
 header h5 {
     font-size: 14px;
@@ -139,30 +136,28 @@ header h5 {
     border-radius: 100%;
 }
 
-/*------------MAIN------------*/
-main>div {
+/*--------------------MAIN--------------------*/
+main {
+    padding-right: 0.5rem;
+}
+main > div {
     width: 100%;
     height: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
-    
+
     border-radius: 10px;
-    background: linear-gradient(90deg, #80ED9998, #57CC9998, #38A3A598, #22577A98);
+    background: linear-gradient(90deg,#80ed9998,#57cc9998,#38a3a598,#22577a98);
 }
 
-/*------MAIN: nav------*/
+/*--------------------MAIN: nav--------------------*/
 .nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 0.5rem;
     align-items: center;
     padding: 1rem 1.5rem;
-}
-
-@media (min-width: 720px) {
-    .nav {
-        flex-direction: row;
-    };
 }
 
 .icon {
@@ -170,28 +165,28 @@ main>div {
     height: 1.5rem;
 }
 
-.icon:not(:last-of-type){
+.icon:not(:last-of-type) {
     margin-right: 1rem;
 }
 
 nav hr {
     width: 1058px;
     position: relative;
-        top:-30px;
+    top: -30px;
     color: #fafafa60;
 }
 
-/* SEARCH */
+/*--------------------MAIN: nav: search--------------------*/
 .search {
     display: flex;
     align-items: center;
 }
 
 .input-search {
-    width: 25rem;
+    width: 15rem;
     height: 2.5rem;
-    padding-left: 1rem;    
-    transition: .3s ease;
+    padding-left: 1rem;
+    transition: 0.3s ease;
     border: 2px solid #80ed9956;
     border-radius: 6px;
     font-weight: 600;
@@ -208,12 +203,12 @@ nav hr {
 .input-search:focus,
 .input-search:hover {
     outline: none;
-    border-color: #80ED9957;
+    border-color: #80ed9957;
     background-color: #ffffff4f;
     box-shadow: 0 0 0 4px #16161621;
 }
 
-.icon-search {
+.icon-lens {
     position: relative;
     width: 20px;
     height: 20px;
@@ -230,24 +225,24 @@ nav hr {
 }
 
 .voice:hover {
-    transform: scale(1.2,1.2);
+    transform: scale(1.2, 1.2);
     transition: 0.5s all;
 }
 
 .multimedia {
-    display: grid; 
-    grid-template-columns: repeat(5, 200px); 
-    grid-template-rows: 40px 240px ; 
-    gap: 0px 15px; 
-    grid-template-areas: 
-        "musica musica musica musica musica"
-        "musica1 musica2 musica3 musica4 musica5"
-        "aprendizaje aprendizaje aprendizaje aprendizaje aprendizaje"
-        "aprendizaje1 aprendizaje2 aprendizaje3 aprendizaje4 aprendizaje5"
-        "podcasts podcasts podcasts podcasts podcasts"
-        "podcasts1 podcasts2 podcasts3 podcasts4 podcasts5"
-        "deporte deporte deporte deporte deporte"
-        "deporte1 deporte2 deporte3 deporte4 deporte5"; 
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: 40px 240px;
+    gap: 0px 15px;
+    grid-template-areas:
+        'musica musica musica musica musica'
+        'musica1 musica2 musica3 musica4 musica5'
+        'aprendizaje aprendizaje aprendizaje aprendizaje aprendizaje'
+        'aprendizaje1 aprendizaje2 aprendizaje3 aprendizaje4 aprendizaje5'
+        'podcasts podcasts podcasts podcasts podcasts'
+        'podcasts1 podcasts2 podcasts3 podcasts4 podcasts5'
+        'deporte deporte deporte deporte deporte'
+        'deporte1 deporte2 deporte3 deporte4 deporte5';
 
     margin-right: 20px;
     padding-left: 20px;
@@ -264,7 +259,7 @@ nav hr {
     padding: 0 1.5rem;
 }
 
-/*----------------MUSICA----------------*/
+/*--------------------MUSICA--------------------*/
 
 .category {
     display: flex;
@@ -282,8 +277,8 @@ nav hr {
 .musica div {
     width: 136px;
     position: relative;
-        top: -32px;
-        left: 936px;
+    top: -32px;
+    left: 936px;
 }
 
 .btn {
@@ -296,8 +291,8 @@ nav hr {
     padding-left: 8px;
     position: relative;
     overflow: hidden;
-   
-    transition: color .5s;
+
+    transition: color 0.5s;
     cursor: pointer;
     z-index: 1;
 
@@ -315,34 +310,34 @@ nav hr {
     height: 20px;
     margin-left: 5px;
 }
-   
+
 .btn:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
-    
+
     height: 150px;
     width: 200px;
 
     border-radius: 50%;
     background: #161616;
 }
-   
+
 .btn:hover {
     color: #fff;
 }
-   
+
 .btn:before {
     top: 100%;
     left: 100%;
-    transition: all .7s;
+    transition: all 0.7s;
 }
-   
+
 .btn:hover:before {
     top: -30px;
     left: -30px;
 }
-   
+
 .btn:active:before {
     background: #161616;
     transition: background 0s;
@@ -372,11 +367,11 @@ nav hr {
 }
 
 .musica6:hover {
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
     transition: 1s all;
 }
 
-.musica6 div:nth-child(2){
+.musica6 div:nth-child(2) {
     padding: 12px 14px 0 14px;
 }
 
@@ -390,11 +385,11 @@ nav hr {
 }
 
 .musica7:hover {
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
     transition: 1s all;
 }
 
-.musica7 div:nth-child(2){
+.musica7 div:nth-child(2) {
     padding: 12px 14px 0 14px;
 }
 
@@ -408,11 +403,11 @@ nav hr {
 }
 
 .musica8:hover {
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
     transition: 1s all;
 }
 
-.musica8 div:nth-child(2){
+.musica8 div:nth-child(2) {
     padding: 12px 14px 0 14px;
 }
 
@@ -426,11 +421,11 @@ nav hr {
 }
 
 .musica9:hover {
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
     transition: 1s all;
 }
 
-.musica9 div:nth-child(2){
+.musica9 div:nth-child(2) {
     padding: 12px 14px 0 14px;
 }
 
@@ -444,15 +439,15 @@ nav hr {
 }
 
 .musica10:hover {
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
     transition: 1s all;
 }
 
-.musica10 div:nth-child(2){
-    padding: 12px 14px 0 14px;
+.musica10 div:nth-child(2) {
+  padding: 12px 14px 0 14px;
 }
 
-/*----------------APRENDIZAJE----------------*/
+/*--------------------APRENDIZAJE--------------------*/
 .aprendizaje {
     grid-area: aprendizaje;
 
@@ -468,8 +463,8 @@ nav hr {
 .aprendizaje div {
     width: 136px;
     position: relative;
-        top: -32px;
-        left: 948px;
+    top: -32px;
+    left: 948px;
 }
 
 button {
@@ -482,8 +477,8 @@ button {
     padding-left: 8px;
     position: relative;
     overflow: hidden;
-   
-    transition: color .5s;
+
+    transition: color 0.5s;
     cursor: pointer;
     z-index: 1;
 
@@ -500,34 +495,34 @@ button img {
     height: 20px;
     margin-left: 5px;
 }
-   
+
 button:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
-    
+
     height: 150px;
     width: 200px;
-    
+
     border-radius: 50%;
     background: #161616;
 }
-   
+
 button:hover {
     color: #fff;
 }
-   
+
 button:before {
     top: 100%;
     left: 100%;
-    transition: all .7s;
+    transition: all 0.7s;
 }
-   
+
 button:hover:before {
     top: -30px;
     left: -30px;
 }
-   
+
 button:active:before {
     background: #161616;
     transition: background 0s;
@@ -537,7 +532,7 @@ iframe {
     border-radius: 10px 10px 0 0;
 }
 
-/*--------------LOADER.html--------------*/
+/*--------------------LOADER.html--------------------*/
 .loader {
     width: 100px;
     height: 100px;
@@ -546,10 +541,10 @@ iframe {
     align-items: center;
     gap: 6px;
     position: absolute;
-        right: 500px;
-        top: 300px;
+    right: 500px;
+    top: 300px;
 }
-   
+
 .loader span {
     width: 20px;
     height: 20px;
@@ -557,26 +552,27 @@ iframe {
     background-color: #161616;
     opacity: 0;
 }
-   
+
 .loader span:nth-child(1) {
     animation: fade 1s ease-in-out infinite;
 }
-   
+
 .loader span:nth-child(2) {
     animation: fade 1s ease-in-out 0.33s infinite;
-   }
-   
+}
+
 .loader span:nth-child(3) {
     animation: fade 1s ease-in-out 0.66s infinite;
-   }
-   
+}
+
 @keyframes fade {
-    0%, 100% {
-     opacity: 1;
+    0%,
+    100% {
+        opacity: 1;
     }
-   
+
     60% {
-     opacity: 0;
+        opacity: 0;
     }
 }
 
@@ -584,16 +580,16 @@ iframe {
     text-decoration: none;
 }
 
-/*----------------MUSIC.html----------------*/
+/*--------------------MUSIC.html--------------------*/
 .multimedia-musica {
-    display: grid; 
-    grid-template-columns: repeat(5, 200px); 
-    grid-template-rows: 40px 240px ; 
-    gap: 20px 15px; 
-    grid-template-areas: 
-        "musica musica musica musica musica"
-        "musica1 musica2 musica3 musica4 musica5"
-        "musica6 musica7 musica8 musica9 musica10"; 
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: 40px 240px;
+    gap: 20px 15px;
+    grid-template-areas:
+        'musica musica musica musica musica'
+        'musica1 musica2 musica3 musica4 musica5'
+        'musica6 musica7 musica8 musica9 musica10';
 
     margin-right: 20px;
     padding-left: 20px;
@@ -606,12 +602,14 @@ iframe {
     font-size: 10px;
 }
 
-/* EXTRAS */
-
-/* main grid */
+/*--------------------main grid--------------------*/
 .grid {
     display: grid;
     grid-template-columns: 20% 80%;
+}
+
+.aside {
+    justify-self: center;
 }
 
 .grid-multimedia {
@@ -620,7 +618,52 @@ iframe {
     gap: 1rem;
 }
 
-/* Multimedia Grid */
+/*--------------------MEDIA QUERIES--------------------*/
+@media (min-width: 720px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 720px) {
+    .menu-items {
+        position: static;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+@media (min-width: 720px) {
+    .logo {
+        display: block;
+        width: 15rem;
+        height: 9rem;
+    }
+}
+
+@media (min-width: 720px) {
+    .nav {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 420px) {
+    .input-search {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 720px) {
+    .input-search {
+        width: 22rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .input-search {
+        width: 25rem;
+    }
+}
 
 @media (min-width: 720px) {
     .grid-multimedia {
@@ -632,28 +675,4 @@ iframe {
     .grid-multimedia {
         grid-template-columns: repeat(4, 1fr);
     }
-}
-
-/* hidden mobile */
-
-.hidden-mobile {
-    display: none;
-}
-
-@media (min-width: 920px) {
-    .hidden-mobile {
-        display: block;
-    }
-    
-}
-
-.hidden-desktop {
-    display: block;
-}
-
-@media (min-width: 440px) {
-    .hidden-mobile {
-        display: none;
-    }
-    
 }
