@@ -10,48 +10,48 @@
 </head>
 
 <body>
-    <div class="grid">
-        <aside class="aside">
-            <img class="logo" src="images/logo.png">
-            <input id="menu-toggle" type="checkbox" />
-            <label class="menu-btn" for="menu-toggle">
+    <div class="page">
+        <aside class="page__aside">
+            <img class="aside__logo" src="images/logo.png">
+            <input id="aside__menuToggle" type="checkbox" />
+            <label class="aside__menuBtn" for="aside__menuToggle">
                 <span></span>
             </label>
 
-            <ul class="menu-items">
-                <li class="items">
+            <ul class="aside__menuItems">
+                <li class="aside__menuItems--items">
                     <img src="images/home.png">
                     <a href="#">Inicio</a>
                 </li>
-                <li class="items">
+                <li class="aside__menuItems--items">
                     <img src="images/rocket.png">
                     <a href="#">Explorar</a>
                 </li>
-                <li class="items">
+                <li class="aside__menuItems--items">
                     <img src="images/users.png">
                     <a href="#">Suscripciones</a>
                 </li>
-                <li class="items">
+                <li class="aside__menuItems--items">
                     <img src="images/videos.png">
                     <a href="#">Biblioteca</a>
                 </li>
-                <li class="items">
+                <li class="aside__menuItems--items">
                     <img src="images/history.png">
                     <a href="#">Historial</a>
                 </li>
-                <li class="items">
+                <li class="aside__menuItems--items">
                     <img src="images/video-camera.png">
                     <a href="#">Mis videos</a>
                 </li>
-                <li class="items">
+                <li class="aside__menuItems--items">
                     <img src="images/clock.png">
                     <a href="#">Ver más tarde</a>
                 </li>
-                <li class="items">
+                <li class="aside__menuItems--items">
                     <img src="images/like.png">
                     <a href="#">Videos que me gustan</a>
                 </li>
-                <li class="items">
+                <li class="aside__menuItems--items">
                     <img src="images/arrow.png">
                     <a href="#">Mostrar más</a>
                 </li>
@@ -66,77 +66,76 @@
 
         <main>
             <div>
-                <nav class="nav">
-                    <div class="search">
-                        <input type="search" class="input-search" placeholder="Buscar">
-                        <img class="icon-lens" src="images/search.png">
+                <nav class="page__nav">
+                    <div class="nav__search">
+                        <input type="search" class="nav__search--input" placeholder="Buscar">
+                        <img class="nav__search--iconLens" src="images/search.png">
 
                         <div>
-                            <img class="voice" src="images/icon-microphone.png">
+                            <img class="nav__search--iconVoice" src="images/icon-microphone.png">
                         </div>
                     </div>
 
 
-                    <div class="nav-icons">
-                        <img class="icon" src="images/icon-video.png">
-                        <img class="icon" src="images/icon-grid.png">
-                        <img class="icon" src="images/icon-notification.png">
-                        <img class="icon" src="images/icon-user.png">
+                    <div class="nav__icons">
+                        <img class="nav__icons--right" src="images/icon-video.png">
+                        <img class="nav__icons--right" src="images/icon-grid.png">
+                        <img class="nav__icons--right" src="images/icon-notification.png">
+                        <img class="nav__icons--right" src="images/icon-user.png">
                     </div>
                 </nav>
 
-                <div class="main-multimedia">
-
-                    <div class="category">
+                <div class="page__multimedia">
+                    <div class="multimedia__category">
                         <h2>Música</h2>
                         <div>
-                            <a href="loader.html" class="btn">
+                            <a href="loader.html" class="multimedia__category--btn">
                                 Ver más
                                 <img src="images/arrow-right.png">
                             </a>
                         </div>
                     </div>
 
-                    <div class="grid-multimedia">
-                        <div class="card">
+                    <div class="multimedia__grid">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/CCHdMIEGaaM"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>Daft Punk</span><br>
                                 Daft Punk - Get Lucky (Official Audio) ft. Pha...<br>
                                 <span>23M views - 9 years ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/ewOPQZZn4SY"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>The Strokes</span><br>
                                 The Strokes - The Adults Are Talking (Of...<br>
                                 <span>17M views - 1 years ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/uSD4vsh1zDA"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>Black Eyed Peas</span><br>
                                 The Black Eyed Peas - I Gotta Feeling (Official...<br>
                                 <span>616M views - 12 years ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/Bimd2nZirT4"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>The 1975</span><br>
                                 The 1975 - Somebody Else (Official Video)<br>
                                 <span>73M views - 5 years ago</span>
@@ -152,56 +151,56 @@
                     </div> -->
                     </div>
 
-                    <div class="category">
+                    <div class="multimedia__category">
                         <h2>Aprendizaje</h2>
                         <div>
-                            <a href="#" class="btn">
+                            <a href="#" class="multimedia__category--btn">
                                 Ver más
                                 <img src="images/arrow-right.png">
                             </a>
                         </div>
                     </div>
 
-                    <div class="grid-multimedia">
-                        <div class="card">
+                    <div class="multimedia__grid">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/3LQAnFEADl4"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>Academia Play</span><br>
                                 La Revolución Industrial en 7 minutos<br>
                                 <span>3,4M views - 3 years ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/sAlYXC4Aihw"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>Superholly</span><br>
                                 INGLÉS BÁSICO: EL PRESENTE | Superh...<br>
                                 <span>2,2M views - 4 years ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/hqR-vmO-7HM"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>Planetario Chile</span><br>
                                 ¿Por qué se produce un eclipse?<br>
                                 <span>575.495 views - 3 years ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/nthEUEaaDWM"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>Lifeder Educación</span><br>
                                 ¿Qué fue el Romanticismo Literari...<br>
                                 <span>80.668 views - 2 years ago</span>
@@ -217,56 +216,56 @@
                     </div> -->
                     </div>
 
-                    <div class="category">
+                    <div class="multimedia__category">
                         <h2>Podcasts<h2>
                                 <div>
-                                    <a href="#" class="btn">
+                                    <a href="#" class="multimedia__category--btn">
                                         Ver más
                                         <img src="images/arrow-right.png">
                                     </a>
                                 </div>
                     </div>
 
-                    <div class="grid-multimedia">
-                        <div class="card">
+                    <div class="multimedia__grid">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/rjSKVP6pNkI"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>1 minuto de psicología</span><br>
                                 ¿CÓMO IMPACTA TU INFANCIA EN TI HO...<br>
                                 <span>21.659 views - 1 years ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/kevf0Pkvs9s"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>Podcast Natural</span><br>
                                 La ILUSIÓN humana del TIEMPO - PODCA...<br>
                                 <span>262.767 views - 7 years ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/dyjXSG-kVkk"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>Martha Debayle</span><br>
                                 Dices que quieres, pero no lo haces ¿por qué...<br>
                                 <span>1,1M views - 4 years ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/4xj3M6GtabE"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>Despertando + Durmiendo Podcast</span><br>
                                 Despertando Podcast - Día 08 - Amor Propio...<br>
                                 <span>53.588 views - 2 years ago</span>
@@ -282,56 +281,56 @@
                     </div> -->
                     </div>
 
-                    <div class="category">
+                    <div class="multimedia__category">
                         <h2>Deportes</h2>
                         <div>
-                            <a href="#" class="btn">
+                            <a href="#" class="multimedia__category--btn">
                                 Ver más
                                 <img src="images/arrow-right.png">
                             </a>
                         </div>
                     </div>
 
-                    <div class="grid-multimedia">
-                        <div class="card">
+                    <div class="multimedia__grid">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/zaXwKUs1gZ4"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>The Wild Project</span><br>
                                 MALDINI HACE TOP FUTBOLISTAS EN...<br>
                                 <span>1,2M views - 1 year ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/mRWajW_99Cw"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>FOX Sports</span><br>
                                 ‘Lobo’ the Siberian Husky goes off script...<br>
                                 <span>6,6M views - 2 years ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/gwAxXYOPUK8"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>Filo News</span><br>
                                 Leandro Paredes: "La gente se siente identi...<br>
                                 <span>435.668 views - 2 weeks ago</span>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="grid__card">
                             <iframe width="100%" height="130px" src="https://www.youtube.com/embed/b4WYK5Jowsw"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            <div class="card-title">
+                            <div class="grid__card--title">
                                 <span>EZZEQUIEL</span><br>
                                 ¿CUÁNTO SABE DE FÚTBOL DAVO XE...<br>
                                 <span>195.403 views - 8 days ago</span>
